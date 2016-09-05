@@ -2,10 +2,9 @@
 using System.Collections;
 
 public class turtleScript : MonoBehaviour {
-
 	// Use this for initialization
 	void Start () {
-	
+        transform.Translate(2, 0, 0);
 	}
 	
 	// Update is called once per frame
