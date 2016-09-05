@@ -1,11 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class turtleScript : MonoBehaviour {
-
+public class turtleScript : MonoBehaviour 
+{
+	public float level = 0.5f;
+	public bool sink = false;
+	public GameObject Titanic;
 	// Use this for initialization
-	void Start () {
-	
+	void Start () 
+	{
+		if(level < 0.5f)
+		{
+			sink = true;
+			Destroy (Titanic);
+		}
 	}
 	
 	// Update is called once per frame
